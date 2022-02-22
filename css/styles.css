@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image:url(/images/background-image.jpg);
+  }
+
+  .bg-mint {
+    background-color: #1D91C4;
+  }
+
+  .header {
+    background: url(/images/hawaii-candid.jpg);
+    background-size:cover;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    margin: 0px;
+    height: 400px;
+  }
+  
+  .special h3 {
+    margin: 50px 0px;
+  }
+
+  div.transbox {
+    /* float:center; */
+    margin: 30px;
+    background-color: #ffffff;
+    /* border: 1px solid black; */
+    opacity: 0.6;
+    text-align:center;
+  }
+
+
+  div.transbox h1, p {
+    margin: 2%;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  div.transbox ul, li {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: large;
+    color: #000000;
+  }
+
+  p {
+    padding: 10px 60px;
+    margin: 2px;
+    /* border: 1px solid #5D6063; */
+    text-align: center;
+    box-sizing: border-box;
+    font-size:medium;
+  }
+  
+  .menu {
+    height: 100px;
+    margin-bottom: 15px;
+    /*border: 1px solid #5D6063; */
+  }
+  
+  #menu-home {
+    height: 400px;
+  }
+
+  .footer {
+    clear:both;
+    height: 200px;
+    /* background-color: #D6E9FE;  */
+  }
+
+  .list {
+    display:flex;
+    justify-content:center;
+    list-style-type:none;
+  }
+  
+  .item a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .displayGrid {
+    display: grid;
+    grid-template: auto auto auto auto auto / 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 10px;
+    justify-items: center;
+  }
+
+  #aboutGrid {
+    grid-template: auto auto auto auto auto / 1fr 1fr;
+  }
+
+  .gridItem {
+    border-style: dotted ridge;
+    border-radius: 50px;
+    opacity: 0.6;
+    background-color: #ffffff;
+  }
+
+  .photo img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+  .footerImg img {
+    max-height: 50px;
+    width: 100%;
+  }
+
+  .optionImg img {
+    max-width: 200px;
+  }
+
+  .optionImg img:hover {
+    opacity: 0.8;
+  }
+
+  button {
+    margin: 20px;
+  }
+
+
+  @media (min-width: 48em) {
+    .navbar-nav {
+      margin-left: auto!important;
+      margin-right: 0!important;
+    }
+  }
+
+
+  @media only screen and (max-width: 650px) {
+    .displayGrid {
+      grid-template: auto auto auto auto auto / 1fr 1fr;
+    }
+  }
+  
+  /* Tablet Styles
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+      background-color: #F5CF8E;
+    }
+  } 
+  
+  /* Desktop Styles
+  @media only screen and (min-width: 961px) {
+  
+  } */
